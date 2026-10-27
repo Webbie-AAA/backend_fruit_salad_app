@@ -1,6 +1,7 @@
+require('dotenv').config();
 const app = require('./app');
  //parenthesis because its an application?
-const port = 3000 //When we do it on local machine define own port
+const port = process.env.PORT; //When we do it on local machine define own port
 
 //App connected to server, we set the path we want to look for in, and then we
 //pass in 2 arguments. Those are the request and the response.
